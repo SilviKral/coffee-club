@@ -20,10 +20,10 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="sign_up.html">Sign Up</a>
+                    <a href="sign_up.html" class="active">Sign Up</a>
                 </li>
                 <li>
-                    <a href="gallery.html" class="active">Gallery</a>
+                    <a href="gallery.html" >Gallery</a>
                 </li>
                 <li>
                     <a href="index.html">Home</a>
@@ -31,21 +31,51 @@
             </ul>
         </nav>
     </header>
-
-    <section id="photos">
-        <img src="assets/images/cofG1.jpeg" alt="old people drink coffee">
-        <img src="assets/images/cofG10.jpeg" alt="guy prepare coffee">
-        <img src="assets/images/cofG11.jpeg" alt="boy prepare coffee">
-        <img src="assets/images/cofG2.webp" alt="coffee date">
-        <img src="assets/images/cofG3.avif" alt="people drink coffee together">
-        <img src="assets/images/cofG4.jpeg" alt="dropping espresso">
-        <img src="assets/images/cofG5.jpeg" alt="latte art capuccino">
-        <img src="assets/images/cofG6.jpeg" alt="coffee cupping">
-        <img src="assets/images/cofG7.jpeg" alt="making latte art">
-        <img src="assets/images/cofG8.webp" alt="preparing coffee">
-        <img src="assets/images/cofG9.webp" alt="drinking coffee outside">
-    </section>
     
+
+    <div class="bg-form">
+        <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/">
+            <h2>Let's go to love coffee!</h2>
+            
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" class="text-input" name="first_name" required>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" class="text-input" name="last_name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="text-input" name="email_address" required>
+
+            <ul style="list-style-type: none; font-size: medium; font-weight: 500;">
+                <li>
+                    <label for="first">First Touch</label>
+                    <input type="radio" id="first" name="event_preference" value="first" required>
+                </li>
+
+                <li>
+                   <label for="advanced">Advanced</label>
+                   <input type="radio" id="advanced" name="event_preference" value="advanced" required> 
+                </li>
+
+                <li>
+                    <label for="outdoors">Coffee Outdoors</label>
+                    <input type="radio" id="outdoors" name="event_preference" value="outdoors" required>
+                </li>
+
+                <li>
+                    <label for="speed_date">Coffee speed date</label>
+                    <input type="radio" id="speed_date" name="event_preference" value="speed_date" required>
+                </li>
+
+                <li>
+                    <label for="books">Coffee&Books</label>
+                    <input type="radio" id="books" name="event_preference" value="books" required>
+                </li>
+            </ul>
+            <input class="join-button" type="submit" value="Sign me up">
+        </form>
+    </div>
+
     <footer>
         <h2>Follow us on Social media</h2>
         <ul class="social-networks">
@@ -69,7 +99,5 @@
     </footer>
      <!-- Font awesome script -->
      <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
-
 </body>
-
 </html>

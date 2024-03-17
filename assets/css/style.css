@@ -194,7 +194,12 @@ hr {
 }
 
 footer {
-    height: 150px;
+    height: 100px;
+}
+
+footer h2 {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .social-networks {
@@ -208,7 +213,7 @@ footer {
 .social-networks i {
     font-size: 160%;
     margin: 1%;
-    padding: 5%;
+    padding: 3%;
     color: #3a3a3a;
 }
 
@@ -318,12 +323,12 @@ footer {
         border-radius: 20px; 
 }
 
-.form-section {
+.bg-form {
     clear: left;
-    background-image: url('../images/coff_in_mount.jpeg') no-repeat center center;
+    background-image: url('../images/coff_in_mount.jpeg') ;
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 700px;
 }
 
 
